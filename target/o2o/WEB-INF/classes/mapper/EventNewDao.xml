@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.steins.dao.EventNewDao">
+
+	<insert id="insertEvent" useGeneratedKeys="true" keyProperty="eventId"
+		keyColumn="event_id">
+		INSERT INTO
+		event(first_level,second_level,
+		third_level,event_name)
+		VALUES
+		(#{firstLevel},#{secondLevel},
+		#{thirdLevel},#{eventName})
+	</insert>
+
+	<delete id="deleteEvent">
+		DELETE FROM
+		event
+		WHERE
+		first_level =
+		#{firstLevel}
+		OR
+		second_level =
+		#{secondLevel}
+		OR
+		third_level =
+		#{thirdLevel}
+		OR
+		event_name =
+		#{eventName}
+	</delete>
+
+	<select id="queryEvent" resultType="com.steins.entity.Event">
+		SELECT *
+		FROM event
+	</select>
+
+	<update id="updateEvent" parameterType="com.steins.entity.Event">
+		update event
+		<set>
+			<if test="firstLevel != null">
+			first_level=#{transport},
+			</if>
+			<if test="secondLevel != null">
+			second_level=#{transport},
+			</if>
+			<if test="thirdLevel != null">
+			thirdLevel=#{transport},
+			</if>
+			<if test="eventName != null">
+			event_name = #{transport}
+			</if>
+		</set>
+		WHERE
+		first_level =
+		#{firstLevel}
+		OR
+		second_level =
+		#{secondLevel}
+		OR
+		third_level =
+		#{thirdLevel}
+		OR
+		event_name =
+		#{eventName}
+	</update>
+
+</mapper>
+    

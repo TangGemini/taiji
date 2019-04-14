@@ -1,0 +1,33 @@
+2019-04-09 20:23:06.383 [main] DEBUG com.steins.dao.split.DynamicDataSourceInterceptor - 设置方法[com.steins.dao.EventNewDao.queryEvent] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-04-09 20:23:06.419 [main] DEBUG com.steins.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2019-04-09 20:23:07.031 [main] DEBUG com.steins.dao.EventNewDao.queryEvent - ==>  Preparing: SELECT * FROM event ORDER BY priority DESC 
+2019-04-09 20:23:07.060 [main] DEBUG com.steins.dao.EventNewDao.queryEvent - ==> Parameters: 
+2019-04-09 20:24:08.893 [main] DEBUG com.steins.dao.split.DynamicDataSourceInterceptor - 设置方法[com.steins.dao.EventNewDao.queryEvent] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-04-09 20:24:08.897 [main] DEBUG com.steins.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2019-04-09 20:24:09.188 [main] DEBUG com.steins.dao.EventNewDao.queryEvent - ==>  Preparing: SELECT * FROM event 
+2019-04-09 20:24:09.220 [main] DEBUG com.steins.dao.EventNewDao.queryEvent - ==> Parameters: 
+2019-04-09 20:24:09.240 [main] DEBUG com.steins.dao.EventNewDao.queryEvent - <==      Total: 15
+2019-04-09 20:26:15.183 [main] DEBUG com.steins.dao.split.DynamicDataSourceInterceptor - 设置方法[com.steins.dao.EventNewDao.queryEvent] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-04-09 20:26:15.187 [main] DEBUG com.steins.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2019-04-09 20:26:15.458 [main] DEBUG com.steins.dao.EventNewDao.queryEvent - ==>  Preparing: SELECT * FROM event 
+2019-04-09 20:26:15.494 [main] DEBUG com.steins.dao.EventNewDao.queryEvent - ==> Parameters: 
+2019-04-09 20:26:15.512 [main] DEBUG com.steins.dao.EventNewDao.queryEvent - <==      Total: 15
+2019-04-09 21:06:02.941 [main] DEBUG com.steins.dao.split.DynamicDataSourceInterceptor - 设置方法[com.steins.dao.EventNewDao.updateEvent] use [master] Strategy, SqlCommanType [UPDATE]..
+2019-04-09 21:06:02.946 [main] DEBUG com.steins.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2019-04-09 21:07:23.511 [main] DEBUG com.steins.dao.split.DynamicDataSourceInterceptor - 设置方法[com.steins.dao.EventNewDao.updateEvent] use [master] Strategy, SqlCommanType [UPDATE]..
+2019-04-09 21:07:23.515 [main] DEBUG com.steins.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2019-04-09 21:08:21.261 [main] DEBUG com.steins.dao.split.DynamicDataSourceInterceptor - 设置方法[com.steins.dao.EventNewDao.updateEvent] use [master] Strategy, SqlCommanType [UPDATE]..
+2019-04-09 21:08:21.266 [main] DEBUG com.steins.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2019-04-09 21:08:21.571 [main] DEBUG com.steins.dao.EventNewDao.updateEvent - ==>  Preparing: update event SET first_level=? WHERE first_level = ? OR second_level = ? OR third_level = ? OR event_name = ? 
+2019-04-09 21:08:21.608 [main] DEBUG com.steins.dao.EventNewDao.updateEvent - ==> Parameters: 哈哈(String), 武术(String), null, null, null
+2019-04-09 21:08:21.827 [main] DEBUG com.steins.dao.EventNewDao.updateEvent - <==    Updates: 1
+2019-04-09 21:09:10.673 [main] DEBUG com.steins.dao.split.DynamicDataSourceInterceptor - 设置方法[com.steins.dao.EventNewDao.updateEvent] use [master] Strategy, SqlCommanType [UPDATE]..
+2019-04-09 21:09:10.677 [main] DEBUG com.steins.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2019-04-09 21:09:10.982 [main] DEBUG com.steins.dao.EventNewDao.updateEvent - ==>  Preparing: update event SET first_level=? WHERE first_level = ? OR second_level = ? OR third_level = ? OR event_name = ? 
+2019-04-09 21:09:11.009 [main] DEBUG com.steins.dao.EventNewDao.updateEvent - ==> Parameters: 哈哈(String), 武术(String), null, null, null
+2019-04-09 21:09:11.087 [main] DEBUG com.steins.dao.EventNewDao.updateEvent - <==    Updates: 1
+2019-04-09 21:14:39.916 [main] DEBUG com.steins.dao.split.DynamicDataSourceInterceptor - 设置方法[com.steins.dao.EventNewDao.updateEvent] use [master] Strategy, SqlCommanType [UPDATE]..
+2019-04-09 21:14:39.929 [main] DEBUG com.steins.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2019-04-09 21:14:40.380 [main] DEBUG com.steins.dao.EventNewDao.updateEvent - ==>  Preparing: update event SET first_level=? WHERE first_level = ? OR second_level = ? OR third_level = ? OR event_name = ? 
+2019-04-09 21:14:40.416 [main] DEBUG com.steins.dao.EventNewDao.updateEvent - ==> Parameters: 哈哈(String), 武术(String), null, null, null
+2019-04-09 21:14:40.419 [main] DEBUG com.steins.dao.EventNewDao.updateEvent - <==    Updates: 0
