@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#add").click(function () {
+            $.ajax({
+                type: "get",
+                url: "http://localhost:8080/taiji2_war/eventnew/add",
+                data: {"first": "武术", "second": "太极拳", "third": "器械", "name": "杨氏太极拳"},
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                }
+            })
+        });
+    });
+
+</script>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<button id="add">增加</button>
+
+</body>
+</html>
